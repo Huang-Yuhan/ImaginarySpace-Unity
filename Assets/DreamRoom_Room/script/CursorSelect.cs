@@ -35,7 +35,7 @@ public class CursorSelect : MonoBehaviour
                 or "Right"
             )
             {
-                DestObj.GetComponent<MeshRenderer>().material.color = Color.black;
+                DestObj.GetComponent<MeshRenderer>().material.color = new Color(224f/255,117f/255,117f/255);
                 if (Input.GetMouseButtonDown(1))
                 //如果鼠标右键按下就放置一个方块-旁边是plane
                 {
@@ -50,7 +50,7 @@ public class CursorSelect : MonoBehaviour
             }
             else if (DestObj.tag is "Bricks")       //旁边是方块
             {
-                DestObj.GetComponent<MeshRenderer>().material.color = Color.black;
+                DestObj.GetComponent<MeshRenderer>().material.color = new Color(224f / 255, 117f / 255, 117f / 255);
                 if (Input.GetMouseButtonDown(1))
                 //如果鼠标右键按下就放置一个方块-旁边是plane
                 {
